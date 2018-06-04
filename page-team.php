@@ -531,18 +531,5 @@
 				<p class="teamdescription">Tobias studied Sports and Computer Science in Darmstadt, is an experienced Java/Scala engineer and has a background in database development at a research institute for applied training science. He has been contributing to the Android app since 2013.</p>
 			</div>
 		</div>
-		<div class="col-md-4">
-			<div class="teamp">
-				<img class="img-responsive img-circle teamimg" alt="photo" src="<?php bloginfo('template_directory'); ?>/assets/img/people/tomaz.jpg" />
-				<h2 class="teamname">Tomaz Canabrava</h2>
-				<div class="teammeta">
-					<h3 class="teamtitle">Software Engineer</h3>
-					<h4 class="teamexpertise">Desktop Client</h4>
-					<h4 class="teamlocation">lives in Munich, Germany</h4>
-					<p class="teamsocial"><a href="https://github.com/tcanabrava"><i class="fa-github fa"></i></a></p>
-				</div>
-				<p class="teamdescription">Tomaz is a software engineer with decades experience developing Qt and C++ applications at a wide variety of organizations.</p>
-			</div>
-		</div>
 	</div>
 </section>
