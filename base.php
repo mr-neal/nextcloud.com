@@ -95,7 +95,7 @@ if(is_page('oc-news') || is_page('blogfeed')) {
 		'press',
 		'privacy',
 		'promote',
-		'providers',
+// 		'providers',
 // 		'providersubmit',
 //		'release-channels',
 // 		'salessubmit',

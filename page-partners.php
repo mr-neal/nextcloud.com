@@ -169,7 +169,7 @@
             <a href="https://www.zerotrust.fr" target="_blank" title="Zero Trust">
 				<img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/assets/img/partners/zerotrust.png" title="ZeroTrust logo" />
 				</a>
-				<p  class="partnertext">Zero Trust is a french company offering IT consulting, security audits and security solutions integration. We provide Nextcloud  for our customers in order to improve their data protection and compliance with RGDP and other regulations.</p>
+				<p  class="partnertext">Zero Trust is a french company offering IT consulting, security audits and security solutions integration. We provide Nextcloud  for our customers in order to improve their data protection and compliance with GDPR and other regulations.</p>
             </div>
         </div>
 

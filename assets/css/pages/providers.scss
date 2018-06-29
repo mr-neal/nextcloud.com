@@ -1,0 +1,103 @@
+@import '../variables';
+@import '../modules/transparent-navbar';
+@import '../../fonts/fork-awesome/css/fork-awesome.min';
+
+
+.gdpr-background {
+	background: url('../../img/headers/gdpr.jpg') no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+/* General */
+
+section {
+    padding: 50px 0 50px;
+    .section--heading-1 {
+        padding-bottom: 50px;
+    }
+    .section--paragraph__tittle {
+        padding: 0;
+    }
+}
+
+/* Sections */
+
+.section--intro {
+    p {
+        margin-top: 15px;
+    }
+}
+
+.section--partners {
+    @media (min-width: $break-small) {
+        img {
+            max-width: 80%;
+            margin-left: 10%;
+        }
+        .col-md-4 {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    }
+    .partnertext {
+        text-align: justify;
+    }
+}
+
+.section--providerlist {
+
+    .prov-thumbnail {
+        /* 	line-height: 1; */
+        /*		 background-color: #fff; */
+        border: 1px solid #eee;
+        border-radius: 4px;
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        display: inline-block;
+        max-width: 100%;
+        /*		 height: auto; */
+        /*		 display: block; */
+        margin-bottom: 20px;
+        margin-top: 20px;
+        padding: 5px;
+    }
+    .provider {
+
+        .providername {
+            height: 30px;
+        }
+
+        .provider-logo {
+            padding: 2px;
+            margin: auto;
+            width: 95%;
+        }
+
+        .bannerhead {
+            height: 110px;
+            text-align: center;
+            background-color: white !important;
+            border-bottom: none !important;
+            margin-bottom: 5px;
+        }
+
+        .flag {
+            margin: auto;
+            padding: 2px 5px;
+        }
+
+        .bannerfoot {
+            height: 110px;
+            background-color: white !important;
+            border: none !important;
+        }
+    }
+
+}
+
+
+
+.section--overview {
+}
+
