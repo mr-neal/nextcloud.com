@@ -88,6 +88,17 @@
     .migration-background .topquote .carousel {
       width: 100%; }
 
+.section--reasons .floated-quote {
+  float: right;
+  width: 450px;
+  max-width: 50%;
+  margin: 20px -150px 20px 20px; }
+  .section--reasons .floated-quote blockquote {
+    margin: 0 0 -20px 0; }
+  .section--reasons .floated-quote .referee {
+    width: 120px;
+    margin-left: 15px; }
+
 .section--paragraph__tittle {
   padding-top: 50px; }
 
