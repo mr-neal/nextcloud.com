@@ -21,49 +21,7 @@ if(is_page('oc-news') || is_page('blogfeed')) {
 	 * Pages that still use the old layout and haven't been migrated
 	 */
 	$oldPages = [
-		'404',
-		'5years',
 // 		'about',
-		'advisories',
-		'advisory',
-		'agreement',
-		'android',
-		'appform',
-		'appform-submit',
-		'apply',
-		'apply2',
-		'changelog',
-		'code-of-conduct',
-// 		'collaboraonline',
-		'community',
-// 		'conf',
-		'conference-program',
-		'confinfo',
-		'confsubscribe',
-		'connect',
-		'consulting',
-		'contact',
-// 		'contactform',
-// 		'contactsubmit',
-// 		'contribute',
-// 		'contributors',
-// 		'design',
-		'desktop',
-//		'devices',
-// 		'events',
-		'faq',
-		'federation',
-		'hackathon',
-		'history',
-		'impressum',
-		'install',
-		'install-backup',
-		'meetups',
-		'news',
-		'newsletter',
-		'nine',
-		'pidrive',
-		'policy',
 		'pr20160602',
 		'pr20160614',
 		'pr20160705',
@@ -92,31 +50,11 @@ if(is_page('oc-news') || is_page('blogfeed')) {
         'pr20180206',
         'pr20180523-1',
         'pr20180523-2',
-		'press',
-		'privacy',
-		'promote',
-		'providers',
-// 		'providersubmit',
-//		'release-channels',
-// 		'salessubmit',
-// 		'securesharesubmit',
-// 		'securesharing',
-		'security',
-// 		'sharing',
-		'speaking',
-		'spreedbox',
-// 		'support',
-// 		'team',
-		'thanks',
-		'thankyou',
-// 		'ordersubmit',
-		'theming',
-		'threat-model',
-		'trademarks',
-		'translation',
+        'pr20180825-1',
+        'pr20180825-2',
+        'pr20180825-3',
+        'pr20180917',
 		'user',
-//		'webrtc',
-// 		'workflow'
 
 	];
 	function is_blog()
@@ -202,9 +140,14 @@ $echoed = false;
 $hl = '';
 $path = parse_url(site_url())['path'];
 $language = explode('/', substr($_SERVER['REQUEST_URI'], strlen($path)));
-if(isset($language[1]) && $language[1] === 'de') {
-	$hl = strtolower((string)$language[1]);
-	if (ctype_alnum($hl) && strlen($hl) === 2) {
+if(isset($language[1])) {  // check if language is set.
+	if (strlen($hl) == 2) {
+	$hl = strtolower((string)$language[1]); // lowercase two-character country codes
+	} else {
+	$hl = (string)$language[1];
+	}
+	// check if $hl is either a 2-character alphanumeric code or a regexp matched, 5-character xx_YY style code
+	if ( (ctype_alnum($hl) && strlen($hl) === 2) || (preg_match("/^[a-z]{2}_[A-Z]{2}/",$language[1]) && strlen($hl) == 5) ) {
 		$l10nFiles = [
 			get_post()->post_name,
 			'header-navbar',
