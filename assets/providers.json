@@ -1201,11 +1201,11 @@
       },
     {
          "title":"Twist Development Limited",
-         "url":"https:\/\/www.twistdevelopment.co.uk\/file-sharing",
+         "url":"https:\/\/www.twistdevelopment.co.uk\/nextcloud",
          "flags":[
             "uk"
          ],
-         "freeplans":true,
+         "freeplans":false,
          "supports":"both",
          "specializes":[
             "We are a UK based company offering off-site high spec servers with NextCloud ready to go. We offer full training and technical support."
